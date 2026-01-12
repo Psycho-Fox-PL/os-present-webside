@@ -1,0 +1,137 @@
+/* macOS Global Styles */
+body.macos-page {
+    /* Abstract colorful macOS wallpaper vibe */
+    background: url('https://images.unsplash.com/photo-1621360841013-c768371e93cf?q=80&w=2000&auto=format&fit=crop') no-repeat center center fixed;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+
+.mac-navbar {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mac-window {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(40px) saturate(150%);
+    -webkit-backdrop-filter: blur(40px) saturate(150%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 80px auto;
+    overflow: hidden;
+}
+
+.mac-titlebar {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: transparent;
+}
+
+.traffic-lights {
+    display: flex;
+    gap: 8px;
+}
+
+.traffic-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.close {
+    background: #ff5f57;
+    border: 1px solid #e0443e;
+}
+
+.minimize {
+    background: #febc2e;
+    border: 1px solid #d8a11f;
+}
+
+.maximize {
+    background: #28c840;
+    border: 1px solid #1aab29;
+}
+
+.mac-content {
+    padding: 0 40px 40px 40px;
+}
+
+.mac-hero-text {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-top: 20px;
+}
+
+.mac-btn {
+    background: #007aff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Ventura */
+body.ventura-page {
+    background: #f5b041;
+    /* Fallback/Placeholder if images don't load, ideally gradients or url */
+    background: linear-gradient(135deg, #f5b041 0%, #e67e22 100%);
+    background-size: cover;
+}
+
+.ventura-stage {
+    position: fixed;
+    left: 20px;
+    top: 100px;
+    bottom: 20px;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.stage-app {
+    width: 40px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transform: perspective(400px) rotateY(20deg);
+}
+
+/* Monterey */
+body.monterey-page {
+    background: linear-gradient(135deg, #a569bd 0%, #d2b4de 100%);
+    background-size: cover;
+}
+
+/* Big Sur */
+body.bigsur-page {
+    background: linear-gradient(135deg, #3498db 0%, #e74c3c 100%);
+    background-size: cover;
+}

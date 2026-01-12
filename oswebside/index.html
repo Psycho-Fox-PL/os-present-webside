@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzeum Systemów Operacyjnych</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* Specific Section Styles for Index */
+        #windows .card {
+            border-top: 4px solid var(--win-color);
+        }
+
+        #linux .card {
+            border-top: 4px solid var(--linux-color);
+        }
+
+        #macos .card {
+            border-top: 4px solid var(--mac-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Wybierz Swój System</h1>
+        <p class="hero-subtitle">Podróż przez historię i nowoczesność. Odkryj systemy, które napędzają świat.</p>
+        <a href="#windows" class="btn">Rozpocznij Podróż</a>
+    </header>
+
+    <!-- Windows Section -->
+    <section id="windows">
+        <div class="os-header">
+            <h2>Windows</h2>
+            <span class="badge" style="background: var(--win-color); color: white;">Oś czasu</span>
+        </div>
+        <div class="timeline">
+            <!-- 95 -->
+            <a href="pages/windows/win95.html" class="card">
+                <div class="card-icon">💾</div>
+                <h3>Windows 95</h3>
+                <p>Start Me Up. Menu Start i pasek zadań - tak to się zaczęło.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- 98 -->
+            <a href="pages/windows/win98.html" class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Windows 98</h3>
+                <p>Internet już tu jest. Active Desktop i lepsza obsługa USB.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- XP -->
+            <a href="pages/windows/winxp.html" class="card">
+                <div class="card-icon">🦕</div>
+                <h3>Windows XP</h3>
+                <p>Legendarny, niezapomniany, pełen nostalgii. System, który zdefiniował erę.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- 7 -->
+            <a href="pages/windows/win7.html" class="card">
+                <div class="card-icon">✨</div>
+                <h3>Windows 7</h3>
+                <p>Szczyt estetyki Aero Glass. Stabilność i piękno w jednym.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- 10 -->
+            <a href="pages/windows/win10.html" class="card">
+                <div class="card-icon">🟦</div>
+                <h3>Windows 10</h3>
+                <p>Uniwersalna platforma. Ostatni system... a jednak nie.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- 11 -->
+            <a href="pages/windows/win11.html" class="card">
+                <div class="card-icon">💠</div>
+                <h3>Windows 11</h3>
+                <p>Nowoczesność, Fluent Design i harmonia. Przyszłość okienek.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Linux Section -->
+    <section id="linux">
+        <div class="os-header">
+            <h2>Linux</h2>
+            <span class="badge" style="background: var(--linux-color); color: white;">Dystrybucje</span>
+        </div>
+        <div class="grid">
+            <!-- Ubuntu -->
+            <a href="pages/linux/ubuntu.html" class="card">
+                <div class="card-icon">🟠</div>
+                <h3>Ubuntu</h3>
+                <p>Linux dla ludzi. Stabilny, popularny i prosty w obsłudze.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Mint -->
+            <a href="pages/linux/mint.html" class="card">
+                <div class="card-icon">🍃</div>
+                <h3>Linux Mint</h3>
+                <p>Świeżość i tradycja. Idealny na początek przygody.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Arch -->
+            <a href="pages/linux/arch.html" class="card">
+                <div class="card-icon">🏹</div>
+                <h3>Arch Linux</h3>
+                <p>Twój system, Twoje zasady. Dla tych, którzy chcą wiedzieć wszystko.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Debian -->
+            <a href="pages/linux/debian.html" class="card">
+                <div class="card-icon">🌀</div>
+                <h3>Debian</h3>
+                <p>Uniwersalny system operacyjny. Matka wielu dystrybucji.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Gentoo -->
+            <a href="pages/linux/gentoo.html" class="card">
+                <div class="card-icon">🔧</div>
+                <h3>Gentoo</h3>
+                <p>Kompiluj wszystko. Maksymalna wydajność dla profesjonalistów.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Red Hat -->
+            <a href="pages/linux/redhat.html" class="card">
+                <div class="card-icon">🎩</div>
+                <h3>Red Hat</h3>
+                <p>Standard korporacyjny. Stabilność klasy enterprise.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- OpenSUSE -->
+            <a href="pages/linux/opensuse.html" class="card">
+                <div class="card-icon">🦎</div>
+                <h3>openSUSE</h3>
+                <p>Moc kameleona. Elastyczność i potężne narzędzia.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- macOS Section -->
+    <section id="macos">
+        <div class="os-header">
+            <h2>macOS</h2>
+            <span class="badge" style="background: var(--mac-color); color: #333;">Ewolucja</span>
+        </div>
+        <div class="timeline">
+            <!-- Sequoia -->
+            <a href="pages/macos/sequoia.html" class="card">
+                <div class="card-icon">🌲</div>
+                <h3>Sequoia</h3>
+                <p>Najnowsza potęga. Integracja z iPhonem jakiej nie znałeś.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Sonoma -->
+            <a href="pages/macos/sonoma.html" class="card">
+                <div class="card-icon">🍇</div>
+                <h3>Sonoma</h3>
+                <p>Widgety na pulpicie i tryb gry.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Ventura -->
+            <a href="pages/macos/ventura.html" class="card">
+                <div class="card-icon">🌺</div>
+                <h3>Ventura</h3>
+                <p>Stage Manager i nowe podejście do multitaskingu.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Monterey -->
+            <a href="pages/macos/monterey.html" class="card">
+                <div class="card-icon">🏞️</div>
+                <h3>Monterey</h3>
+                <p>Łączność bez granic. Universal Control.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+            <!-- Big Sur -->
+            <a href="pages/macos/bigsur.html" class="card">
+                <div class="card-icon">🌉</div>
+                <h3>Big Sur</h3>
+                <p>Wielka zmiana designu. Początek ery Apple Silicon.</p>
+                <span class="card-link">Odkryj więcej &rarr;</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center; padding: 2rem; color: #555;">&copy; 2026 Muzeum Systemów Operacyjnych</p>
+    </footer>
+
+</body>
+
+</html>

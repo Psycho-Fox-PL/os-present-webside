@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS Sonoma</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/macos.css">
+    <style>
+        body.sonoma-bg {
+            background-image: url('https://km.support.apple.com/kb/image.jsp?productid=119277&size=640x301');
+            /* Sonoma Landscape Placeholder */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="macos-page sonoma-bg">
+
+    <div class="mac-navbar">
+        <div style="font-weight: bold; margin-right: 20px;"></div>
+        <div style="margin-right: 20px;">macOS Sonoma</div>
+        <div style="flex-grow: 1;"></div>
+        <a href="../../index.html" style="margin-left: 20px; font-weight: normal;">Powrót</a>
+    </div>
+
+    <!-- Widgets simulation on desktop -->
+    <div
+        style="position: fixed; top: 100px; right: 50px; width: 150px; display: flex; flex-direction: column; gap: 20px; opacity: 0.8;">
+        <div
+            style="background: rgba(0,0,0,0.4); backdrop-filter: blur(20px); border-radius: 16px; padding: 15px; color: white;">
+            <div style="font-size: 0.8rem; font-weight: bold;">POGODA</div>
+            <div style="font-size: 2rem;">21°</div>
+            <div style="font-size: 0.8rem;">Słonecznie</div>
+        </div>
+        <div
+            style="background: rgba(0,0,0,0.4); backdrop-filter: blur(20px); border-radius: 16px; padding: 15px; color: white;">
+            <div style="font-size: 0.8rem; font-weight: bold;">CAL</div>
+            <div style="font-size: 1.5rem;">ŚRO</div>
+            <div style="font-size: 2rem; color: #ff3b30;">12</div>
+        </div>
+    </div>
+
+    <div class="mac-window" style="margin-top: 150px;">
+        <div class="mac-titlebar">
+            <div class="traffic-lights">
+                <div class="traffic-dot close"></div>
+                <div class="traffic-dot minimize"></div>
+                <div class="traffic-dot maximize"></div>
+            </div>
+            <div style="flex-grow: 1; text-align: center; color: #555; font-weight: 600;">Odkryj</div>
+        </div>
+
+        <div class="mac-content">
+            <h1 style="text-align: center; margin-bottom: 20px; color: #1d1d1f; font-size: 2.5rem;">Cudownie. Zdolny.
+            </h1>
+
+            <div style="display: flex; gap: 20px; align-items: flex-start; margin-top: 40px;">
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 10px; color: #1d1d1f;">Widgety na biurku</h3>
+                    <p style="color: #444;">Umieszczaj widgety prosto na pulpicie. Zlewają się z tapetą, gdy pracujesz w
+                        innych oknach.</p>
+                </div>
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 10px; color: #1d1d1f;">Game Mode</h3>
+                    <p style="color: #444;">Gry działają szybciej i płynniej, priorytetyzując zasoby CPU i GPU.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center;">
+                <p style="font-size: 0.9rem; color: #888;">Zaprojektowany dla Apple Silicon.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

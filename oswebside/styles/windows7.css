@@ -1,0 +1,238 @@
+/* Windows 7 Specific Styles */
+
+/* Wallpaper Simulation */
+body.win-7 {
+    background: radial-gradient(circle at 50% 30%, #4eaebb 0%, #0078d7 40%, #00204a 90%);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+    /* Hide scrollbars for the OS feel */
+}
+
+/* Aero Glass Window */
+.aero-window {
+    background: rgba(24, 65, 88, 0.4);
+    /* Glass tint */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.5),
+        inset 0 0 2px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    /* The Glass Effect */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aero-titlebar {
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    /* Glass highlight reflection */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 41%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 7px 7px 0 0;
+}
+
+.aero-controls span {
+    display: inline-block;
+    width: 25px;
+    height: 18px;
+    margin-left: 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.aero-btn-close {
+    background: linear-gradient(to bottom, #e06c6c 0%, #a00000 100%);
+    border-color: #700000 !important;
+}
+
+.aero-btn-close:hover {
+    background: linear-gradient(to bottom, #ff9ca0 0%, #d83b3b 100%);
+    box-shadow: 0 0 5px #ff7f7f;
+}
+
+.aero-btn-close::before,
+.aero-btn-close::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 11px;
+    width: 2px;
+    height: 10px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.aero-btn-close::after {
+    transform: rotate(-45deg);
+}
+
+.aero-btn-max {
+    background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+    border-color: #888 !important;
+    opacity: 0.8;
+}
+
+.aero-btn-max::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 10px;
+    height: 6px;
+    border: 2px solid #333;
+    border-top-width: 3px;
+}
+
+.aero-btn-min {
+    background: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+    border-color: #888 !important;
+    opacity: 0.8;
+}
+
+.aero-btn-min::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 6px;
+    width: 10px;
+    height: 3px;
+    background: #333;
+}
+
+
+.aero-content {
+    padding: 20px 40px;
+    background: #fff;
+    /* White content area */
+    flex-grow: 1;
+    margin: 0 5px 5px 5px;
+    color: #000;
+}
+
+/* Taskbar */
+.win7-taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(20, 60, 90, 0.8);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 1000;
+    /* Taskbar glass gloss */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.start-orb {
+    width: 36px;
+    height: 36px;
+    background: radial-gradient(circle, #24354c 0%, #151e29 100%);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow:
+        0 0 5px rgba(0, 180, 255, 0.5),
+        inset 0 0 5px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.start-orb:hover {
+    box-shadow: 0 0 15px rgba(0, 180, 255, 0.8);
+    background: radial-gradient(circle, #344763 0%, #202b3a 100%);
+}
+
+.start-orb-logo {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    /* Simple CSS windows flag approximation */
+    background: linear-gradient(45deg, #f34f1c 0%, #f34f1c 50%, #7fbc00 50%, #7fbc00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.5));
+}
+
+/* More accurate 4-color flag via CSS gradients is complex, using text for now or simple SVG */
+
+
+.task-item {
+    width: 50px;
+    height: 38px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.task-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.tray-clock {
+    margin-left: auto;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    text-shadow: 0 0 3px black;
+    padding: 0 10px;
+}
+
+/* Sidebar Gadgets improved */
+.gadget-container {
+    padding: 10px;
+}
+
+.gadget-glass {
+    background: rgba(20, 40, 60, 0.4);
+    /* Darker glass for gadgets */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gadget-glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
+    pointer-events: none;
+}

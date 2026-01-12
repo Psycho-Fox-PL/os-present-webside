@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 95</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/windows.css">
+</head>
+
+<body class="win-classic">
+
+    <div
+        style="background: #008080; min-height: 100vh; position: relative; font-family: 'MS Sans Serif', 'Tahoma', sans-serif;">
+        <!-- Desktop Icons -->
+        <div style="padding: 20px; display: flex; flex-direction: column; gap: 20px; width: 100px;">
+            <div style="text-align: center; color: white; cursor: pointer;">
+                <div style="font-size: 2rem;"><img src="../../assets/images/windows/my_computer.png"
+                        style="width: 32px; height: 32px;"></div>
+                <div style="font-size: 0.8rem; margin-top: 5px;">Mój Komputer</div>
+            </div>
+            <div style="text-align: center; color: white; cursor: pointer;">
+                <div style="font-size: 2rem;"><img src="../../assets/images/windows/recycle_bin_empty.png"
+                        style="width: 32px; height: 32px;"></div>
+                <div style="font-size: 0.8rem; margin-top: 5px;">Kosz</div>
+            </div>
+            <!-- Back to Index as a shortcut -->
+            <a href="../../index.html"
+                style="text-align: center; color: white; cursor: pointer; text-decoration: none;">
+                <div style="font-size: 2rem;"><img src="../../assets/images/windows/back_arrow.svg"
+                        style="width: 32px; height: 32px;"></div>
+                <div style="font-size: 0.8rem; margin-top: 5px;">Powrót</div>
+            </a>
+        </div>
+
+        <!-- Window -->
+        <div class="classic-window" style="position: absolute; top: 50px; left: 150px; width: 600px;">
+            <div class="classic-titlebar">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <img src="../../assets/images/windows/computer_explorer_small.svg"
+                        style="width: 16px; height: 16px;">
+                    <span>Witamy w Windows 95</span>
+                </div>
+                <div class="classic-btn-close" onclick="history.back()">X</div>
+            </div>
+            <div class="classic-menu">
+                <span>Plik</span>
+                <span>Edycja</span>
+                <span>Widok</span>
+                <span>Pomoc</span>
+            </div>
+            <div class="classic-content">
+                <div style="display: flex; gap: 20px;">
+                    <div
+                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 150px;">
+                        <img src="../../assets/images/windows/win95_logo_large.png" style="width: 100px; opacity: 1;">
+                        <p style="margin-top: 10px; font-weight: bold; font-size: 1.5rem;">Windows 95</p>
+                    </div>
+                    <div>
+                        <p>Pierwszy system z <strong>Menu Start</strong>.</p>
+                        <p style="margin-top: 10px;">To tutaj wszystko się zaczęło. Plug and Play (czasem Plug and
+                            Pray), gierki w 3D (Hover!) i teledysk Weezer na płycie instalacyjnej.</p>
+
+                        <fieldset style="margin-top: 20px; border: 1px solid #888; padding: 10px;">
+                            <legend>Wskazówka Dnia</legend>
+                            <img src="../../assets/images/windows/lightbulb.png"
+                                style="float: left; margin-right: 10px; width: 32px;">
+                            <p>Czy wiedziałeś, że możesz kliknąć prawym przyciskiem myszy na pulpicie?</p>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div
+            style="position: fixed; bottom: 0; left: 0; width: 100%; height: 28px; background: #c0c0c0; border-top: 2px solid #fff; display: flex; align-items: center; padding: 2px;">
+            <div class="classic-start-btn">
+                <img src="../../assets/images/windows/start_flag.png" style="width: 16px; margin-right: 4px;">
+                Start
+            </div>
+            <div style="border-left: 1px solid #888; border-right: 1px solid #fff; height: 20px; margin: 0 5px;"></div>
+            <div style="flex-grow: 1;"></div>
+            <div
+                style="border: 1px solid #888; border-bottom: 1px solid #fff; border-right: 1px solid #fff; background: #c0c0c0; padding: 2px 5px; font-size: 0.8rem; margin-right: 2px;">
+                12:00
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

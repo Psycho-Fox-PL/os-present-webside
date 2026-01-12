@@ -1,0 +1,319 @@
+/* Windows Global Styles */
+:root {
+    --win-bg: #f3f3f3;
+    --win-dark-bg: #202020;
+    --win-accent: #0078d4;
+    --win-text: #1b1b1b;
+    --win-dark-text: #ffffff;
+}
+
+body.windows-page {
+    background-color: var(--win-bg);
+    color: var(--win-text);
+    font-family: 'Segoe UI Variable', 'Segoe UI', sans-serif;
+}
+
+/* Fluent Design Utils */
+.mica-effect {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px) saturate(120%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .mica-effect {
+    background-color: rgba(32, 32, 32, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.fluent-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e5e5e5;
+}
+
+.fluent-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.fluent-btn {
+    background-color: var(--win-accent);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.fluent-btn:hover {
+    background-color: #006cc1;
+}
+
+/* XP Specifics */
+body.win-xp {
+    background: linear-gradient(135deg, #0058e6 0%, #3a97ff 100%);
+    /* Luna Blue */
+    font-family: 'Tahoma', sans-serif;
+    color: #fff;
+}
+
+.xp-window {
+    background: #ece9d8;
+    color: #000;
+    border: 3px solid #0055ea;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.xp-titlebar {
+    background: linear-gradient(to bottom, #0058e6 0%, #3a97ff 10%, #0058e6 100%);
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    text-shadow: 1px 1px #000;
+}
+
+.xp-content {
+    padding: 20px;
+}
+
+.xp-btn {
+    background: linear-gradient(to bottom, #fff 0%, #ece9d8 100%);
+    border: 1px solid #003c74;
+    border-radius: 3px;
+    padding: 4px 12px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Windows 10 Metro */
+body.win-10 {
+    background: #101010;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.metro-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.metro-tile {
+    background-color: #0078d7;
+    /* Default Blue */
+    color: white;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+    transition: transform 0.1s, outline 0.1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.metro-tile:hover {
+    transform: scale(0.98);
+    outline: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.tile-icon {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tile-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.tile-wide {
+    grid-column: span 2;
+}
+
+.tile-large {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 310px;
+}
+
+/* Windows 7 Aero */
+body.win-7 {
+    background: url('https://images.hdqwalls.com/wallpapers/windows-7-original-4k-m2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.aero-window {
+    background: rgba(240, 255, 255, 0.4);
+    /* Glassy Blue-ish */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 0 5px rgba(255, 255, 255, 0.8);
+    max-width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.aero-titlebar {
+    height: 35px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.aero-controls span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.aero-btn-close {
+    background: #e0443e !important;
+}
+
+.aero-content {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 10px;
+    border: 1px solid #aaa;
+    padding: 20px;
+    min-height: 400px;
+    color: #333;
+}
+
+/* Fix Aero Buttons */
+.aero-btn-min {
+    background: #ccc;
+    /* Fallback */
+    /* Minimalist line */
+    background: linear-gradient(to bottom, #d2e4f7 0%, #87b2df 100%);
+}
+
+.aero-btn-max {
+    background: #ccc;
+    /* Fallback */
+    background: linear-gradient(to bottom, #d2e4f7 0%, #87b2df 100%);
+}
+
+.aero-controls span:hover {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Windows Classic (95/98) */
+body.win-classic {
+    background: #008080;
+    /* Teal default */
+    font-family: 'MS Sans Serif', 'Tahoma', sans-serif;
+    color: black;
+}
+
+.classic-window {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #dfdfdf #404040 #404040 #dfdfdf;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}
+
+.classic-titlebar {
+    background: #000080;
+    /* Navy Blue 95 */
+    color: white;
+    padding: 2px 4px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gradient-98 {
+    background: linear-gradient(to right, #000080, #1084d0);
+    /* 98 Gradient */
+}
+
+.classic-btn-close {
+    background: #c0c0c0;
+    color: black;
+    border: 1px solid;
+    border-color: #dfdfdf #404040 #404040 #dfdfdf;
+    width: 16px;
+    height: 14px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.classic-btn-close:active {
+    border-color: #404040 #dfdfdf #dfdfdf #404040;
+}
+
+.classic-menu {
+    display: flex;
+    gap: 15px;
+    padding: 2px 5px;
+    margin-bottom: 2px;
+}
+
+.classic-menu span {
+    cursor: pointer;
+}
+
+.classic-menu span:first-letter {
+    text-decoration: underline;
+}
+
+.classic-content {
+    background: white;
+    border: 2px solid;
+    border-color: #404040 #dfdfdf #dfdfdf #404040;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.classic-start-btn {
+    border: 2px solid;
+    border-color: #dfdfdf #404040 #404040 #dfdfdf;
+    padding: 2px 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 0 black;
+}
+
+.classic-start-btn:active {
+    border-color: #404040 #dfdfdf #dfdfdf #404040;
+    transform: translate(1px, 1px);
+    box-shadow: none;
+}

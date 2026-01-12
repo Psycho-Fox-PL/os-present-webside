@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Linux - The Wiki Way</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/linux.css">
+</head>
+
+<body class="arch-page">
+
+    <div class="terminal-window">
+        <!-- Header -->
+        <div style="margin-bottom: 20px;">
+            <span class="prompt">[user@archlinux ~]$</span> <span class="cmd">cat welcome.txt</span>
+            <div class="output">
+                <pre>
+   /\
+  /  \
+ /    \    WITAMJ W ARCH LINUX
+/______\
+                </pre>
+                <p>System prosty, lekki i elastyczny. Budujesz go cegła po cegle.</p>
+                <p>"I use Arch btw" - to nie mem, to styl życia.</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div style="margin-bottom: 20px;">
+            <span class="prompt">[user@archlinux ~]$</span> <span class="cmd">ls menu/</span>
+            <div class="output" style="display: flex; gap: 20px;">
+                <a href="../../index.html" style="color: #1793d1; text-decoration: underline;">../index.html</a>
+                <a href="https://archlinux.org" style="color: #1793d1; text-decoration: underline;">official_site</a>
+                <a href="https://wiki.archlinux.org" style="color: #1793d1; text-decoration: underline;">wiki_link</a>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div style="margin-bottom: 20px;">
+            <span class="prompt">[user@archlinux ~]$</span> <span class="cmd">pacman -Qi arch-features</span>
+            <div class="output">
+                <p>Name : arch-features</p>
+                <p>Version : rolling-release</p>
+                <p>Description : </p>
+                <ul style="list-style: none; margin-left: 20px;">
+                    <li>+ Rolling Release (Zawsze najnowsze pakiety)</li>
+                    <li>+ Pacman (Najszybszy menadżer pakietów)</li>
+                    <li>+ AUR (Arch User Repository - znajdziesz tu wszystko)</li>
+                    <li>+ Brak bloatware (Instalujesz tylko to, co chcesz)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Install Command -->
+        <div>
+            <span class="prompt">[user@archlinux ~]$</span> <span class="cmd">sudo help_me_install</span>
+            <div class="output">
+                <p>Nie bój się. Mamy teraz 'archinstall'.</p>
+                <p>1. Pobierz ISO</p>
+                <p>2. Zbootuj</p>
+                <p>3. Wpisz `archinstall`</p>
+                <br>
+                <p>...albo zrób to ręcznie, jeśli jesteś odważny.</p>
+            </div>
+            <span class="prompt">[user@archlinux ~]$</span> <span class="cmd blinking-cursor">_</span>
+        </div>
+
+    </div>
+
+    <style>
+        .blinking-cursor {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+</body>
+
+</html>

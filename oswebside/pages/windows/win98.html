@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 98</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/windows.css">
+</head>
+
+<body class="win-classic">
+
+    <div
+        style="background: #3a6ea5; min-height: 100vh; position: relative; font-family: 'MS Sans Serif', 'Tahoma', sans-serif;">
+        <!-- Desktop Icons -->
+        <div style="padding: 20px; display: flex; flex-direction: column; gap: 20px; width: 100px;">
+            <div style="text-align: center; color: white; cursor: pointer;">
+                <div style="font-size: 2rem;">💻</div>
+                <div style="font-size: 0.8rem; margin-top: 5px;">Mój Komputer</div>
+            </div>
+            <div style="text-align: center; color: white; cursor: pointer;">
+                <div style="font-size: 2rem;">🌐</div>
+                <div style="font-size: 0.8rem; margin-top: 5px;">Internet Explorer</div>
+            </div>
+            <a href="../../index.html"
+                style="text-align: center; color: white; cursor: pointer; text-decoration: none;">
+                <div style="font-size: 2rem;">🔙</div>
+                <div style="font-size: 0.8rem; margin-top: 5px;">Powrót</div>
+            </a>
+        </div>
+
+        <!-- Window -->
+        <div class="classic-window" style="position: absolute; top: 80px; left: 200px; width: 650px;">
+            <div class="classic-titlebar gradient-98">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <img src="https://win98icons.alexmeub.com/icons/png/world-0.png" style="width: 16px; height: 16px;">
+                    <span>Witamy w Windows 98</span>
+                </div>
+                <div class="classic-btn-close" onclick="history.back()">X</div>
+            </div>
+            <div class="classic-menu">
+                <span>Plik</span>
+                <span>Widok</span>
+                <span>Idź</span>
+                <span>Ulubione</span>
+                <span>Pomoc</span>
+            </div>
+            <div class="address-bar"
+                style="background: #ece9d8; padding: 4px; border-bottom: 1px solid #888; display: flex; align-items: center; gap: 5px; font-size: 0.8rem;">
+                <span style="color: #444;">Adres:</span>
+                <div style="background: white; border: 1px solid #888; flex-grow: 1; padding: 2px;">
+                    C:\Windows\System32\Welcome.exe</div>
+            </div>
+            <div class="classic-content" style="background: white;">
+                <div style="display: flex;">
+                    <div
+                        style="width: 180px; background: linear-gradient(to bottom, #1084d0, #000040); color: white; padding: 20px;">
+                        <h3>Windows 98</h3>
+                        <p style="font-size: 0.8rem; margin-top: 10px;">Działa lepiej. Gra lepiej.</p>
+                    </div>
+                    <div style="padding: 20px; flex-grow: 1;">
+                        <h2>Witamy w internecie.</h2>
+                        <p>Windows 98 zintegrował przeglądarkę z systemem. Active Desktop pozwalał mieć stronę WWW na
+                            tapecie (co nie zawsze było dobrym pomysłem).</p>
+
+                        <ul style="margin-top: 20px; margin-left: 20px;">
+                            <li>Obsługa USB (zanim Bill Gates zaliczył BSOD).</li>
+                            <li>Pasek szybkiego uruchamiania.</li>
+                            <li>Więcej kolorów w ikonach!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div
+            style="position: fixed; bottom: 0; left: 0; width: 100%; height: 28px; background: #c0c0c0; border-top: 2px solid #fff; display: flex; align-items: center; padding: 2px;">
+            <div class="classic-start-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/20px-Microsoft_logo.svg.png"
+                    style="width: 12px; margin-right: 4px;">
+                Start
+            </div>
+            <div style="border-left: 1px solid #888; border-right: 1px solid #fff; height: 20px; margin: 0 5px;"></div>
+            <!-- Quick Launch -->
+            <div style="font-size: 1.2rem; margin-right: 10px;">📧 🌐 💻</div>
+            <div style="border-left: 1px solid #888; border-right: 1px solid #fff; height: 20px; margin: 0 5px;"></div>
+
+            <div
+                style="background: #3a6ea5; color: white; padding: 2px 10px; border: 1px inset #fff; flex-grow: 1; font-size: 0.8rem; font-weight: bold;">
+                Witamy w Windows 98</div>
+
+            <div
+                style="border: 1px solid #888; border-bottom: 1px solid #fff; border-right: 1px solid #fff; background: #c0c0c0; padding: 2px 5px; font-size: 0.8rem; margin-right: 2px;">
+                12:00
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
